@@ -1,0 +1,360 @@
+%-------------------------
+% Resume in Latex
+% Author : Arkadeep Das, Manas Daruka, Ayush Sharma, Abhinav Gupta
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,13pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{1mm}#2 \vspace{-1mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}, #2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-1.5mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-1mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=0.5mm,parsep=0pt,topsep=0pt]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{
+    \begin{justify}
+    \begin{itemize}[
+        label={\small$\bullet$},
+        leftmargin=3ex,
+        rightmargin=2ex,
+        noitemsep,
+        labelsep=1.2mm,
+        itemsep=0mm
+    ]
+    \small
+}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+\newcommand{\name}{TARUN NAIK BANAVATHU}
+\newcommand{\course}{B.Tech - Electronics and Communication Engineering}
+\newcommand{\roll}{230102097}
+\newcommand{\phone}{9392386090}
+\newcommand{\emaila}{b.tarun@iitg.ac.in}
+\newcommand{\emailb}{tarunnaikbanavathu995@gmail.com}
+\newcommand{\GitHub}{taru469}
+\newcommand{\linkedin}{tarunb-naik}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{iitg_logo.jpg}
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone\\
+  {Roll No.:\roll} & \href{mailto:\emaila}{\emaila} \\
+  \course & \href{mailto:\emaila}{\emailb}\\
+  {Indian Institute of Technology, Guwahati} & 
+  \href{}{Portfolio} |
+  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedin\ linkedin} |
+  \href{https://github.com/\GitHub}{\faGithub\ GitHub} 
+\end{tabularx}
+}
+
+\vspace{-3mm}
+
+
+\section{Education}
+\setlength{\tabcolsep}{5pt}
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech. Major & Indian Institute of Technology, Guwahati & 6.00 & 2026-Present\\
+  \hline
+  Senior Secondary & Board of Intermediate Education Andhra Pradesh & 88.2\% & 2022 \\
+  \hline
+  Secondary & Central Board of Secondary Education & 69\% & 2020 \\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Data Science Research Intern}
+  {Dr. Anirban Dasgupta, Department of EEE, IIT Guwahati}
+  {May 2026 -- Jun 2026}
+  {\href{https://github.com/Sandeep-Gugulothu/FolioPP}{Certificate}}
+  \resumeItemListStart
+  
+    \item[$\circ$]{Applied signal standardization, StandardScaler normalization and Gaussian noise augmentation to classify \textbf{12 eye-related} \makebox[\linewidth][s]{{conditions} using a multiclass pipeline with \textbf{2-channel Electrooculography (EOG)} for robust and reliable model training}}
+
+   \item[$\circ$] {Implemented and benchmarked \textbf{5 models} \textbf{LSTM, Bi-LSTM, Transformer, TimesNet and Mamba} for multiclass EOG time-series classification, comparing performance using \textbf{Python, TensorFlow/Keras and Scikit-learn} across key evaluation metrics}
+
+    \item[$\circ$]{Achieved \textbf{86.57\% test accuracy} and \textbf{0.83 macro F1-score} with the best-performing \textbf{LSTM} model, outperforming a custom \textbf{Transformer encoder (86.11\%)} based on precision, recall, and F1-score evaluation across key metrics on the held-out test set}
+    
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Natural Language to SQL Chatbot using LangChain}
+  {Personal Project}
+  {August 2026}
+  {\underline{\href{https://github.com/taru469/NL2SQL}{GitHub}} $|$ \underline{\href{https://nl2sql-estxcfmn7vjq7ruasfjpwl.streamlit.app}{Demo}}}
+  \resumeItemListStart
+    \item[$\circ$] {\makebox[\linewidth][s]{Deployed \textbf {AI agent}  on \textbf {MySQL} database \textbf{(8 tables, 100k + records)}, automating analytics and saving \textbf{90\% query time}}}
+    
+    \item[$\circ$] {\makebox[\linewidth][s]{Improved \textbf{accuracy} by \textbf{40\%} with semantic query search and adaptive table selection using \textbf{LangChain} and \textbf{ChromaDB}}}
+    
+    \item[$\circ$] {\makebox[\linewidth][s]{Enabled real-time decision making via \textbf{Streamlit} prototype powered by \textbf{Gemini API} connected to \textbf{Aiven} cloud database}}
+  \resumeItemListEnd
+
+
+\resumeProject
+  {Image to GenZCaption Generator}
+  {Group project}
+  {July 2026}
+   {\underline{\href{https://github.com/taru469/Image-to-GenZCaption}{GitHub}} $|$ \underline{\href{https://image-to-genzcaption-wkjzjwmzphrxabbf3dvgw4.streamlit.app}{Demo}}}
+  \resumeItemListStart
+    \item[$\circ$] {\makebox[\linewidth][s]{Enabled \textbf{2modes} local \textbf{VGG16-LSTM} and \textbf{Gemini 1.5} Flash LLM, generating context-aware, GenZ-style image captions in time}}
+
+    \item[$\circ$] {\makebox[\linewidth][s]{Built a custom Python data generator to efficiently preprocess and handle the \textbf{Flickr8k dataset} for CNN-LSTM model training}}
+
+    \item[$\circ$] {\makebox[\linewidth][s]{Achieved \textbf{BLEU-1 of 0.53} and \textbf{BLEU-2 of 0.31}, leveraging \textbf{NLTK} for natural language processing and caption evaluation}}
+
+    \item[$\circ$] {\makebox[\linewidth][s]{Deployed \textbf{Streamlit web application} with \textbf{TensorFlow} and \textbf{Gemini API} for real-time local LSTM,GenAI-based caption inference}}
+  \resumeItemListEnd
+
+\resumeProject
+  {Telecom Customer Churn Prediction}
+  {Personal Project}
+  {June 2026}
+  {\underline{\href{https://github.com/taru469/Image-to-GenZCaption}{GitHub}}}
+  \resumeItemListStart
+    \item[$\circ$] {\makebox[\linewidth][s]{Built a \textbf{classification pipeline} for \textbf{7,043 customers}; Plotly EDA revealed  month-to-month contracts and low tenure drove churn}}
+
+    \item[$\circ$] {\makebox[\linewidth][s]{Benchmarked \textbf{10ML models},tuned \textbf{GradientBoosting} with \textbf{GridSearchCV},\textbf{10-fold CV} achieved \textbf{82\% accuracy},\textbf{0.85 AUC}}}
+    
+    \item[$\circ$] {\makebox[\linewidth][s]{Engineered \textbf{20+ features}, converted TotalCharges, \textbf{StandardScaler} to numerical and  \textbf{LabelEncoded 16} categorical variables}}
+  \resumeItemListEnd
+
+\resumeProject
+  {Abstractive Text Summarisation using RNN and Transformers}
+  {Self-Initiated Project}
+  {June 2026}
+  {\underline{\href{https://github.com/taru469/Image-to-GenZCaption}{GitHub}}}
+  \resumeItemListStart
+    
+      \item[$\circ$]{\makebox[\linewidth][s]{Built \textbf{GRU seq2seq} models with \textbf{attention} mechanisms and subword tokenization to generate abstractive text summaries}}
+      
+      \item[$\circ$] {\makebox[\linewidth][s]{Fine-tuned \textbf{T5 \& BART} encoder-decoder models with \textbf{beam-search decoding} producing coherent and concise outputs}}
+       
+      \item[$\circ$]{ \makebox[\linewidth][s]{Evaluated models using \textbf{ROUGE \& BLEU} metrics, analyzing trade-offs between coverage, conciseness, linguistic quality}}
+
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+
+\section{Technical Skills}
+\begin{tabular}{@{}p{0.49\textwidth}@{\hspace{8pt}}p{0.49\textwidth}@{}}
+
+\textbf{Programming:} Python, C/C++, SQL
+&
+\textbf{Tools:} Git, GitHub
+\\[2pt]
+
+\textbf{ML/Systems:} Scikit-Learn, XGBoost, PyTorch, TensorFlow, Pipelines, Evaluation, Feature Engineering
+&
+\textbf{NLP/GenAI:} Transformers, Hugging Face, LangChain, RAG, Embeddings, QLoRA, Reinforcement Learning, Q-Learning
+\\[2pt]
+
+\textbf{Data/Databases:} Pandas, NumPy, PostgreSQL, DuckDB
+&
+\textbf{Deployment:} FastAPI, Docker, Redis, MinIO, REST APIs
+\\[2pt]
+
+\end{tabular}
+
+\vspace{-2.5mm}
+
+\section{Key Courses Taken}
+\resumeHeadingSkillStart
+   \resumeSubItem{Programming}
+    {Deep Learning, Data Structures \& Algorithms, Introduction to Computing, Embedded Systems}
+  \resumeSubItem{Mathematics}
+    {Linear Algebra, Differential Calculus, Probability \& Random Processes.}
+  \resumeSubItem{Electronics}
+    {Digital Circuits, Signals and Systems, Semiconductor Devices, Signal Processing}
+\resumeHeadingSkillEnd
+
+\section{Position of Responsibility}
+\resumeSubHeadingListStart
+
+\item
+\begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Kabaddi Secretary, Sports Board, Student Gymkhana Council (SGC), IIT Guwahati}
+    & \textit{\footnotesize{April 2026 -- April 2027}}
+\end{tabular*}
+\vspace{-5.5mm}
+
+\resumeItemListStart
+
+      \item[$\circ$] {\makebox[\linewidth][s]{Directed a \textbf{20-member} core team and \textbf{120+ associates}, delegating roles across operations, training, events, and teams key.}}
+
+       \item[$\circ$] {\makebox[\linewidth][s]{Secured \textbf{INR 25k+} in external sponsorships for \textbf{KPL}through sponsor outreach, negotiations, budgeting, and budget controls.}}
+
+         \item[$\circ$] {\makebox[\linewidth][s]{Initiated \textbf{3+} new campus tournaments, creating competitive opportunities and expanding Kabaddi participation across IITG.}}
+
+        \item[$\circ$] {\makebox[\linewidth][s]{Managed \textbf{5+ Kabaddi events} end-to-end, coordinating \textbf{120+ members} across logistics, scheduling, registrations \& match ops.}}
+
+         \item[$\circ$] {\makebox[\linewidth][s]{Led events engaging \textbf{25+} campus and external participants and spectators, expanding Kabaddi visibility and reach campus.}}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-2.5mm}
+
+
+\section{Achievements \& Leaderships}
+\resumeSubHeadingListStart
+
+\resumePOR{Gold Medal}
+    {Zelta Automations High Prep Challenge at \textbf{Inter IIT Technical Meet 13.0} - IIT Bombay among 21 IITs}
+    {2024}
+
+\resumePOR{Top 10 Finalist}
+    {in the Introductory Options Hackathon 2025 by \textbf{FEC, IIT Guwahati} among \textbf{1,500+} participants}
+    {2025}
+
+\resumePOR{Semi-Finalist and Top Performing}
+    {in The \textbf{Economic Times} Gen AI Hackathon 2026, among \textbf{50,000+} participants}
+    {2026}
+    
+
+\resumePOR{Core Team}
+    {\textbf{FEC IIT Guwahati} organized bootcamps, workshops and hackathons, promoting financial literacy}
+    {2026}
+
+\resumePOR{Manager}
+    {\textbf{E-Cell IIT Guwahati} supported \textbf{80+ startups} for \textbf{3 months}, guiding growth, fundraising and connections}
+    {2025}
+
+\resumePOR{WebOps Associate}
+    {\textbf{Techniche IIT Guwahati} gained hands-on experience with web development and basic operations}
+    {2024}
+
+\resumeSubHeadingListEnd
+
+\end{document}
